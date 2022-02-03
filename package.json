@@ -7,7 +7,7 @@
     "postbuild": "(test -d dist || mkdir dist) && cp -Rv src/images dist",
     "prestart": "yarn postbuild",
     "preproxy": "yarn prebuild",
-    "proxy": "parcel build src/.html",
+    "proxy": "parcel build src/*.html",
     "build": "parcel build src/*.html --public-url /2daw3/danielo/dist",
     "start": "parcel serve src/*.html --open"
   },
